@@ -2,7 +2,7 @@ $( "input[type='radio']" ).change(function() {
     console.log('yyy');
     localStorage.setItem('studyToggle', $('input[name=inlineRadioOptions]:checked').val());
     $.ajax({
-        url: 'http://5d8cd857443e3400143b4b9c.mockapi.io/api/user/1',    //Your api url
+        url: 'https://5d8cd857443e3400143b4b9c.mockapi.io/api/user/1',    //Your api url
         type: 'PUT',   //type is any HTTP method
         data: {
                 "id": "1",
@@ -17,7 +17,7 @@ $( "input[type='radio']" ).change(function() {
 });
 
 $.ajax({
-    url: "http://5d8cd857443e3400143b4b9c.mockapi.io/api/user/1",
+    url: "https://5d8cd857443e3400143b4b9c.mockapi.io/api/user/1",
     type: 'GET',
     success: function(res) {
         console.log(res.studyToggle);
